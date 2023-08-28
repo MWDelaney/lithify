@@ -76,21 +76,21 @@ class CLI
         WP_CLI::line('');
         WP_CLI::line('');
 
-        // // Make a colorized header for the database section of this command
-        // echo WP_CLI::colorize('%y 🗃️  - Database%n');
-        // WP_CLI::line('');
-        // WP_CLI::log('-------');
-        // WP_CLI::line('');
+        // Make a colorized header for the database section of this command
+        echo WP_CLI::colorize('%y 🗃️  - Database%n');
+        WP_CLI::line('');
+        WP_CLI::log('-------');
+        WP_CLI::line('');
 
-        // // Show proposed changes
-        // echo WP_CLI::colorize(' - %r ' . $prod_url . ' ➡️  %g' . $dev_url . ' %n');
-        // WP_CLI::line('');
-        // echo WP_CLI::colorize(' - %r wp-content/uploads ➡️  %gapp/uploads %n');
-        // WP_CLI::line('');
-        // WP_CLI::line('');
-        // WP_CLI::confirm('Replace database strings?');
-        // WP_CLI::runcommand('search-replace ' . get_site_url() . '/wp-content/uploads ' . get_site_url() . '/app/uploads');
-        // WP_CLI::log('Database strings replaced.');
+        // Show proposed changes
+        echo WP_CLI::colorize(' - %r ' . $prod_url . ' ➡️  %g' . $dev_url . ' %n');
+        WP_CLI::line('');
+        echo WP_CLI::colorize(' - %r wp-content/uploads ➡️  %gapp/uploads %n');
+        WP_CLI::line('');
+        WP_CLI::line('');
+        WP_CLI::confirm('Replace database strings?');
+        WP_CLI::runcommand('search-replace ' . get_site_url() . '/wp-content/uploads ' . get_site_url() . '/app/uploads');
+        WP_CLI::log('Database strings replaced.');
 
         WP_CLI::line('');
         WP_CLI::line('');
@@ -183,43 +183,6 @@ class CLI
                 WP_CLI::line('');
             }
         }
-
-        // // For each plugin to be added with Git, show a line with its name and version
-        // echo WP_CLI::colorize('%y 🐙 🔌  Plugins to be added with Git%n');
-        // WP_CLI::line('');
-
-        // foreach ($other_plugins as $plugin => $version) {
-        //     echo WP_CLI::colorize('  - %g' . $plugin . ' - %b' . $version . ' %n');
-        //     WP_CLI::line('');
-        // }
-        // WP_CLI::line('');
-
-        // // For each plugin to be added with Git, show a line with its name and version
-        // echo WP_CLI::colorize('%y 🐙 🔌  mu-plugins to be added with Git%n');
-        // WP_CLI::line('');
-
-        // foreach ($mu_plugins as $plugin => $version) {
-        //     echo WP_CLI::colorize('  - %g' . $plugin . ' - %b' . $version . ' %n');
-        //     WP_CLI::line('');
-        // }
-        // WP_CLI::line('');
-
-        // // For each theme from wpackagist, show a line with its name and version
-        // echo WP_CLI::colorize('%y 🐘 🎨  Themes to be added with Composer%n');
-        // WP_CLI::line('');
-        // foreach ($themes as $theme => $version) {
-        //     echo WP_CLI::colorize('  - %g' . $theme . ' - %b' . $version . ' %n');
-        //     WP_CLI::line('');
-        // }
-        // WP_CLI::line('');
-
-        // // For each theme to be added with Git, show a line with its name and version
-        // echo WP_CLI::colorize('%y 🐙 🎨  Themes to be added with Git%n');
-        // WP_CLI::line('');
-        // foreach ($other_themes as $theme => $version) {
-        //     echo WP_CLI::colorize('  - %g' . $theme . ' - %b' . $version . ' %n');
-        //     WP_CLI::line('');
-        // }
 
         WP_CLI::line('');
         WP_CLI::line('');
