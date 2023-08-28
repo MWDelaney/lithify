@@ -13,7 +13,6 @@ class MuPlugins
      */
     public static function getMuPlugins()
     {
-      Error this doesn't seem to catch the mu-plugins in directories
         $plugins = get_mu_plugins();
         $installed_plugins = [];
         foreach ($plugins as $plugin => $data) {
