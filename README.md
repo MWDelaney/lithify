@@ -19,7 +19,7 @@ Lithify is a WordPress plugin that adds a WP-CLI command to convert a traditiona
 3. Update Bedrock WordPress version to match the version of WordPress used by your WordPress site. For example, if your WordPress site is running WordPress 5.2.2, update `site/composer.json`:
 
     ```json
-    "roots/wordpress": "^5.2.2",
+    "roots/wordpress": "5.2.2",
     ```
 
 3. Update Bedrock PHP version to match the version from step 2:
